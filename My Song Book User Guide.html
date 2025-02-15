@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>My Song Book User Guide</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="my-song-book-user-guide">My Song Book User Guide</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li>
+<p><a href="#introduction">Introduction</a></p>
+</li>
+<li>
+<p><a href="#managing-genres">Managing genres</a></p>
+<ul>
+<li><a href="#add-a-new-genre">Add a new genre</a></li>
+<li><a href="#edit-an-existing-genre">Edit an existing genre</a></li>
+<li><a href="#delete-a-genre">Delete a genre</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#managing-artists">Managing artists</a></p>
+<ul>
+<li><a href="#add-a-new-artist">Add a new artist</a></li>
+<li><a href="#edit-an-existing-artist">Edit an existing artist</a></li>
+<li><a href="#delete-an-artist">Delete an artist</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#managing-songs">Managing songs</a></p>
+<ul>
+<li><a href="#before-you-begin">Before you begin</a></li>
+<li><a href="#add-a-new-song">Add a new song</a></li>
+<li><a href="#find-a-song">Find a song</a></li>
+<li><a href="#delete-a-song">Delete a song</a></li>
+</ul>
+<h2 id="introduction">Introduction</h2>
+<p>My Song Book is a powerful application that serves as a personal music library. The application streamlines the way in which music is organised by allowing you to:</p>
+<ul>
+<li>Manage artists: Add, edit, or delete artists.</li>
+<li>Manage genres: Add, edit, or delete music genres.</li>
+<li>Manage songs: Add, edit, or delete songs by entering details such as title, artist, and genre.</li>
+<li>Find songs: Search for songs using their metadata.</li>
+</ul>
+<p>This document guides you through the steps that are required to setup and manage your music library effectively.</p>
+<h2 id="managing-genres">Managing genres</h2>
+<p>The Genres section allows you to add, edit or delete music genres to customize your library according to your preferences.</p>
+<h3 id="add-a-new-genre">Add a new genre</h3>
+<ol>
+<li>In <strong>My Songs Book</strong>, select <em>Manage &gt; Genres</em>.</li>
+<li>Select the <em>add icon</em>.</li>
+<li>In the <strong>Add Genre</strong> popup, enter the <strong>Genre Name</strong>.</li>
+<li>Select <strong>Add</strong> to add a new genre.</li>
+</ol>
+<h3 id="edit-an-existing-genre">Edit an existing genre</h3>
+<ol>
+<li>Identify the music genre you want to edit, then select the <em>pencil icon</em>.</li>
+<li>In the <strong>Edit Genre</strong> popup, edit the name of the genre and then select <strong>Edit</strong>.</li>
+</ol>
+<h3 id="delete-a-genre">Delete a genre</h3>
+<ol>
+<li>Identify the music genre you want to delete, then select the <em>trash can</em> icon.</li>
+</ol>
+<h2 id="managing-artists">Managing Artists</h2>
+<p>The Artists section allows you to add, edit or delete song artists to customize your library according to your preferences.</p>
+<h3 id="add-a-new-artist">Add a new artist</h3>
+<ol>
+<li>In <strong>My Songs Book</strong>, select <em>Manage &gt; Artists</em>.</li>
+<li>Select the <em>add icon</em>.</li>
+<li>In the <strong>Add Artist</strong> popup, enter the <strong>Artist Name</strong>.</li>
+<li>Select <strong>Add</strong> to add a new artist.</li>
+</ol>
+<h3 id="edit-an-existing-artist">Edit an existing artist</h3>
+<ol>
+<li>Identify the song artist you want to edit, then select the <em>pencil icon</em>.</li>
+<li>In the <strong>Edit Artist</strong> popup, edit the name of the artist and then select <strong>Edit</strong>.</li>
+</ol>
+<h3 id="delete-an-artist">Delete an artist</h3>
+<ol>
+<li>Identify the song artist you want to delete, then select the <em>trash can</em> icon.</li>
+</ol>
+<h2 id="managing-songs">Managing Songs</h2>
+<p>In this section, you will learn how to add, edit, and delete songs in your library. The following table describes all the parameters that are applicable to a song:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Song</td>
+<td>Title of the song.</td>
+</tr>
+<tr>
+<td>Key</td>
+<td>Tonal center or foundation of the song that is defined by a specific set of notes or chords.</td>
+</tr>
+<tr>
+<td>Tempo</td>
+<td>Speed or pace at which a song is played, typically measured in beats per minute (BPM).</td>
+</tr>
+<tr>
+<td>Genre</td>
+<td>Style of a song based on it's musical characteristics, for example, Grunge, Classical, HipHop etc.</td>
+</tr>
+<tr>
+<td>Artist</td>
+<td>The individual or group that performed or created the song.</td>
+</tr>
+<tr>
+<td>Actions</td>
+<td>Actions used to manuipulate the song record such as Edit or Delete.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="before-you-begin">Before you begin</h3>
+<p>Before adding a song, ensure that the genre and artist has already been created for the song, as each song must belong to an existing genre and artist.</p>
+<h3 id="add-a-new-song">Add a new song</h3>
+<ol>
+<li>In <strong>My Songs Book</strong>, select <em>Songs</em>.</li>
+<li>Select the <em>add icon</em></li>
+<li>In the <strong>Add Song</strong> popup, complete the following details:</li>
+</ol>
+<ul>
+<li>Enter the <em>Song Name</em></li>
+<li>Choose a <em>Song key</em></li>
+<li>Enter the <em>Tempo</em></li>
+<li>Choose a <em>Genre</em></li>
+<li>Choose an <em>Artist</em><br>
+<strong>Note:</strong> The genre and artist must have been created previously before they can be displayed. See <a href="#add-a-new-genre">Add a new genre</a> and <a href="#add-a-new-artist">Add a new artist</a> for more information.</li>
+</ul>
+<ol start="4">
+<li>Select <em>Add</em> to add the new song.</li>
+</ol>
+<h3 id="find-a-song">Find a song</h3>
+<ol>
+<li>In the Songs section, locate the <em>search box</em>.</li>
+<li>Enter any of the metadata of the song that you are looking for, such as the song name, artist, genre or key.</li>
+<li>Review the search results.<br>
+<strong>Note:</strong> Multiple songs may appear if the search term matches several entries.</li>
+</ol>
+<h3 id="delete-a-song">Delete a song</h3>
+<p>Identify the song you want to delete, then select the <em>trash can</em> icon.</p>
+</li>
+</ol>
+
+            
+            
+        </body>
+        </html>
