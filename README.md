@@ -1,3 +1,1 @@
-## Simple User Guide Template for My Song Book
-
-This template serves as a foundation for creating a straightforward user guide for applications like **My Song Book**. 
+This user manual was created as part of a job application process to document a fictional software product.
